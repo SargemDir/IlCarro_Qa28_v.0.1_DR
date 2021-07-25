@@ -48,6 +48,6 @@ public class UserHelper extends HelperBase{
     }
 
     public void checkPolicy() {
-        click(By.xpath("//label[@for='terms-of-use']"));
+        click(By.xpath("//*[@for='terms-of-use']/.."));
     }
 }

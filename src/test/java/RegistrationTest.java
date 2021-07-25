@@ -16,16 +16,16 @@ public class RegistrationTest extends TestBase{
     public void registrationTest(){
         int i =(int) ((System.currentTimeMillis()/1000)%3600);
         User user = new User()
-                .withName("Mona")
-                .withLastName("Dow")
-                .withEmail("mona"+i+"@gmail.com")
-                .withPassword("Mm123"+i+"$");
+                .withName("Kolya")
+                .withLastName("Nikolaev")
+                .withEmail("kolya"+i+"@gmail.com")
+                .withPassword("Qq12345$");
 
 app.userHelper().openRegistrationForm();
 app.userHelper().fillRegistrationForm(user);
 app.userHelper().checkPolicy();
 app.userHelper().submitForm();
-app.userHelper().pause(7000);
+app.userHelper().pause(5000);
         String regS=app.userHelper().getText(By.xpath("//div[@class='dialog-container']//h2"));
         Assert.assertTrue(regS.contains("success"));
 

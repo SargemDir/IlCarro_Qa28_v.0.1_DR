@@ -10,23 +10,23 @@ public class ApplicationManager {
     UserHelper userHelper;
     CarHelper carHelper;
 
-public void init(){
-    wd= new ChromeDriver();
-    wd.manage().window().maximize();
-    wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    wd.navigate().to("https://ilcarro.xyz/search");
-    userHelper = new UserHelper(wd);
-    carHelper= new CarHelper(wd);
+    public void init() {
+        wd = new ChromeDriver();
+        wd.manage().window().maximize();
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.navigate().to("https://ilcarro.xyz/search");
+        userHelper = new UserHelper(wd);
+        carHelper = new CarHelper(wd);
 
-}
+    }
 
-public void stop(){
-    wd.quit();
-}
+    public void stop() {
+        wd.quit();
+    }
 
-  public UserHelper userHelper() {
-       return userHelper;
-   }
+    public UserHelper userHelper() {
+        return userHelper;
+    }
 
     public CarHelper carHelper() {
         return carHelper;
