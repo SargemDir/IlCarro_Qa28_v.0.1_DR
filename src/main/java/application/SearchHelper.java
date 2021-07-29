@@ -91,12 +91,13 @@ public class SearchHelper extends HelperBase {
         String dataLocatorFrom = String.format("//div[text()=' %s ']", dataF[1]);
         click(By.xpath(dataLocatorFrom));
 
-        diffStart = Integer.parseInt(dataT[0]) - diffStart;
-        for (int i = 0; i < diffStart; i++) {
+        int diffEnd = 0;
+        diffEnd = Integer.parseInt(dataT[0]) - Integer.parseInt(dataF[0]);
+        for (int i = 0; i < diffEnd; i++) {
             click(By.xpath("//button[@aria-label='Next month']"));
         }
         String dataLocatorTo = String.format("//div[text()=' %s ']", dataT[1]);
-        click(By.xpath(dataLocatorFrom));
+        click(By.xpath(dataLocatorTo));
 
     }
 }
