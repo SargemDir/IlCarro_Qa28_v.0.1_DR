@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-14T11:14:08" hostname="WIN-VLIAFR1P8UG" time="21.265">
+  <properties/>
+  <testcase name="negativeTestSendKey" classname="SearchTest" time="5.749"/>
+  <testcase name="positiveTestSendKey" classname="SearchTest" time="4.571"/>
+  <system-out><![CDATA[14:14:24 [Test worker] INFO  TestBase - Haifa, 08/29/2021, 08/30/2021
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

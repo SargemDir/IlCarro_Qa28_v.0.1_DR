@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-14T11:13:50" hostname="WIN-VLIAFR1P8UG" time="7.289">
+  <properties/>
+  <testcase name="registrationTest" classname="RegistrationTest" time="7.289"/>
+  <system-out><![CDATA[14:13:50 [Test worker] INFO  TestBase - Registration with --> Name: Kolya --> LastName: Nikolaev --> Email: kolya830@gmail.com --> Password: Qq12345$
+14:13:57 [Test worker] INFO  TestBase - Test passed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

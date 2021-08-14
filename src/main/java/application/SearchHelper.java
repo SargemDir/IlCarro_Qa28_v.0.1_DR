@@ -29,7 +29,7 @@ public class SearchHelper extends HelperBase {
 
     private void fillInputCity(String city) {
         type(By.id("city"), city);
-        pause(500);
+        pause(1000);
         click(By.xpath("//div[@class='pac-item']"));
 
     }
@@ -99,5 +99,11 @@ public class SearchHelper extends HelperBase {
         String dataLocatorTo = String.format("//div[text()=' %s ']", dataT[1]);
         click(By.xpath(dataLocatorTo));
 
+    }
+
+    public void backToHome() {
+        click(By.xpath("//a[@href='/']"));
+        new WebDriverWait(wd,10)
+                .until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".search-container"))));
     }
 }

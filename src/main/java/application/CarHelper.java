@@ -2,8 +2,12 @@ package application;
 
 import models.Car;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class CarHelper extends HelperBase {
@@ -61,7 +65,7 @@ public class CarHelper extends HelperBase {
 
     public void attachPhoto() {
         wd.findElement(By.id("photos"))
-                .sendKeys("C:/Users/User/Downloads/IT/QA_manual/projects/IlCarro_Qa28_v.0.1_DR/src/bmw.jpeg");
+                .sendKeys("C:/Users/User/Downloads/IT/QA_manual/projects/IlCarro_Qa28_v.0.1_DR/src/bmw.jpg");
     }
 
     public void login() {
@@ -71,5 +75,9 @@ public class CarHelper extends HelperBase {
         click(By.xpath("//*[@type='submit']"));
         pause(3000);
         click(By.xpath("//button[.='Ok']"));
+    }
+
+    public void waitUntilClickable(By locator) {
+        new WebDriverWait(wd, 40).until(ExpectedConditions.elementToBeClickable(locator));
     }
 }

@@ -1,0 +1,17 @@
+application/HelperBase.java
+ application.HelperBase
+models/Car.java
+ models.Car
+ models.Car$CarBuilder
+models/User.java
+ models.User
+application/CarHelper.java
+ application.CarHelper
+application/SearchHelper.java
+ application.SearchHelper
+application/MyDataProvider.java
+ application.MyDataProvider
+application/ApplicationManager.java
+ application.ApplicationManager
+application/UserHelper.java
+ application.UserHelper

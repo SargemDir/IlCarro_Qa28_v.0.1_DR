@@ -2,7 +2,10 @@ package application;
 
 import models.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UserHelper extends HelperBase{
     public UserHelper(WebDriver wd) {
@@ -48,6 +51,18 @@ public class UserHelper extends HelperBase{
     }
 
     public void checkPolicy() {
-        click(By.xpath("//*[@for='terms-of-use']/.."));
+//        click(By.xpath("//*[@for='terms-of-use']/.."));
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#terms-of-use').click();");
+    }
+
+    public void waitUntilClickable(By locator) {
+        new WebDriverWait(wd, 40).until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    public void deleteAccount() {
+        click(By.xpath("//*[.='Delete account']"));
+        waitUntilClickable(By.xpath("//button[.='Delete']"));
+        click(By.xpath("//button[.='Delete']"));
     }
 }

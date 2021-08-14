@@ -1,6 +1,10 @@
 import models.Car;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -39,13 +43,14 @@ public class CreateNewcarTest extends TestBase {
         app.carHelper().openCarForm();
         app.carHelper().fillCarForm(car);
         app.carHelper().attachPhoto();
-        app.carHelper().pause(5000);
+        app.carHelper().waitUntilClickable(By.xpath("//button[.='Submit']"));
         app.carHelper().click(By.xpath("//button[.='Submit']"));
-        app.carHelper().pause(5000);
-
-        // assert
+        app.carHelper().waitUntilClickable(By.xpath("//*[.='Car added']"));
 
         Assert.assertEquals(app.carHelper().getText(By.xpath("//*[.='Car added']")),"Car added");
-
+    }
+    @AfterMethod(alwaysRun = true)
+    public void postconditions(){
+        app.carHelper().click(By.xpath("//*[.='Search cars']"));
     }
 }

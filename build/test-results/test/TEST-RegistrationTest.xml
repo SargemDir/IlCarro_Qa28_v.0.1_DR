@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegistrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-14T11:47:39" hostname="WIN-VLIAFR1P8UG" time="7.713">
+  <properties/>
+  <testcase name="registrationTestCSV[0](models.User@5fc00a31)" classname="RegistrationTest" time="1.997"/>
+  <testcase name="registrationTestCSV[1](models.User@77998d00)" classname="RegistrationTest" time="1.393"/>
+  <testcase name="registrationTestCSV[2](models.User@119bbdc1)" classname="RegistrationTest" time="1.357"/>
+  <system-out><![CDATA[14:47:39 [Test worker] INFO  TestBase - Start method -->registrationTestCSV
+14:47:41 [Test worker] INFO  TestBase - Test passed
+14:47:41 [Test worker] INFO  TestBase - End of method -->registrationTestCSV
+14:47:41 [Test worker] INFO  TestBase - Start method -->registrationTestCSV
+14:47:44 [Test worker] INFO  TestBase - Test passed
+14:47:44 [Test worker] INFO  TestBase - End of method -->registrationTestCSV
+14:47:44 [Test worker] INFO  TestBase - Start method -->registrationTestCSV
+14:47:46 [Test worker] INFO  TestBase - Test passed
+14:47:47 [Test worker] INFO  TestBase - End of method -->registrationTestCSV
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
