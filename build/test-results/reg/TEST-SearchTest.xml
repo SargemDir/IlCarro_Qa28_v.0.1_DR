@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SearchTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-14T11:14:08" hostname="WIN-VLIAFR1P8UG" time="21.265">
+<testsuite name="SearchTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-16T15:40:51" hostname="WIN-VLIAFR1P8UG" time="23.615">
   <properties/>
-  <testcase name="negativeTestSendKey" classname="SearchTest" time="5.749"/>
-  <testcase name="positiveTestSendKey" classname="SearchTest" time="4.571"/>
-  <system-out><![CDATA[14:14:24 [Test worker] INFO  TestBase - Haifa, 08/29/2021, 08/30/2021
+  <testcase name="negativeTestSendKey" classname="SearchTest" time="5.528"/>
+  <testcase name="positiveTestSendKey" classname="SearchTest" time="7.467"/>
+  <system-out><![CDATA[18:41:07 [Test worker] INFO  TestBase - Haifa, 08/29/2021, 08/30/2021
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[1629128453514	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:238:19
+TimedPromise@chrome://remote/content/marionette/sync.js:223:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1629128470215	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:238:19
+TimedPromise@chrome://remote/content/marionette/sync.js:223:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+]]></system-err>
 </testsuite>

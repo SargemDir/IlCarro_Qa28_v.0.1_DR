@@ -61,6 +61,7 @@ public class UserHelper extends HelperBase{
     }
 
     public void deleteAccount() {
+        waitUntilClickable(By.xpath("//*[.='Delete account']"));
         click(By.xpath("//*[.='Delete account']"));
         waitUntilClickable(By.xpath("//button[.='Delete']"));
         click(By.xpath("//button[.='Delete']"));

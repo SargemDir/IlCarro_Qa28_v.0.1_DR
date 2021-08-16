@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-14T11:13:50" hostname="WIN-VLIAFR1P8UG" time="7.289">
+<testsuite name="RegistrationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-16T15:40:27" hostname="WIN-VLIAFR1P8UG" time="18.409">
   <properties/>
-  <testcase name="registrationTest" classname="RegistrationTest" time="7.289"/>
-  <system-out><![CDATA[14:13:50 [Test worker] INFO  TestBase - Registration with --> Name: Kolya --> LastName: Nikolaev --> Email: kolya830@gmail.com --> Password: Qq12345$
-14:13:57 [Test worker] INFO  TestBase - Test passed
+  <testcase name="registrationTest" classname="RegistrationTest" time="7.615"/>
+  <testcase name="registrationTestCSV[0](models.User@64ac5906)" classname="RegistrationTest" time="2.025"/>
+  <testcase name="registrationTestCSV[1](models.User@5bb3b0cf)" classname="RegistrationTest" time="1.968"/>
+  <testcase name="registrationTestCSV[2](models.User@3323824)" classname="RegistrationTest" time="1.944"/>
+  <system-out><![CDATA[18:40:27 [Test worker] INFO  TestBase - Registration with --> Name: Kolya --> LastName: Nikolaev --> Email: kolya2427@gmail.com --> Password: Qq12345$
+18:40:35 [Test worker] INFO  TestBase - Test passed
+18:40:38 [Test worker] INFO  TestBase - Test passed
+18:40:42 [Test worker] INFO  TestBase - Test passed
+18:40:45 [Test worker] INFO  TestBase - Test passed
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
