@@ -8,7 +8,7 @@ public class LoginTest extends TestBase{
 
 @BeforeMethod
 public void precondition(){
-    if(!app.userHelper().isLogged()){
+    if(app.userHelper().isLogged()){
         app.userHelper().logout();
     }
 }

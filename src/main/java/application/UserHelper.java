@@ -32,7 +32,8 @@ public class UserHelper extends HelperBase{
     }
 
     public boolean isLogged() {
-        return wd.findElements(By.xpath("//a[.=' Log in ']")).size()>0;
+        //return wd.findElements(By.xpath("//a[.=' Log in ']")).size()<=0;
+        return wd.findElements(By.xpath("//a[.=' Logout ']")).size()>0;
     }
 
     public void logout() {
